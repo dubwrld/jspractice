@@ -19,14 +19,18 @@ numbers.forEach((number) => {
 });
 // alert("Hello Wrld");
 // alert syntax above
-let name = "dub";
-console.log(name);
+let name = "aaron";
+const position = 'intern'
+var hobby = 'skateboarding'
+console.log(name, position, hobby);
 
 let firstName = "dub";
 // let firstName makes my firstName a changing variable
 const lastName = "wrld";
 // const(constant) lastName makes my lastName a non changing variable
-console.log(firstName, lastName);
+const gamerTag = (firstName + lastName)
+// this is declaring a statement!
+console.log(gamerTag);
 // these are called string literals or strings
 
 let age = 30;
