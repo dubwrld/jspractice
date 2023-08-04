@@ -20,15 +20,15 @@ numbers.forEach((number) => {
 // alert("Hello Wrld");
 // alert syntax above
 let name = "aaron";
-const position = 'intern'
-var hobby = 'skateboarding'
+const position = "intern";
+var hobby = "skateboarding";
 console.log(name, position, hobby);
 
 let firstName = "dub";
 // let firstName makes my firstName a changing variable
 const lastName = "wrld";
 // const(constant) lastName makes my lastName a non changing variable
-const gamerTag = (firstName + lastName)
+const gamerTag = firstName + lastName;
 // this is declaring a statement!
 console.log(gamerTag);
 // these are called string literals or strings
@@ -47,7 +47,6 @@ let z = x + y;
 console.log(z);
 // this logs 11 on the console because
 // x = 5, y = 6, and z = x + y
-
 
 // FUNCTIONS FUNCTION FUNCTIONS
 
@@ -72,7 +71,7 @@ thisIsAFunction();
 thisIsAFunction();
 
 function sum(a, b) {
-  // sum is a keyword
+  // sum is a KEYWORD
   // sum is used to return the sum of the
   //  given arrays elements
   // If the array is empty then it returns 0
@@ -103,10 +102,39 @@ function1(" aaron ", "fue ", " derrick");
 function sum(a, b) {
   // calling the sum of the function a and b
   return a * b;
-  // return keyword takes whatever that value is 
-  // you're returning and puts it inside the 
+  // return keyword takes whatever that value is
+  // you're returning and puts it inside the
   // variable of that function
-const amount = sum(10, 10);
-// amount is the variable in this situation
-console.log(amount);
+  const amount = sum(10, 10);
+  // amount is the variable in this situation
+  console.log(amount);
 }
+
+// ARRAYS AND ARRAY METHODS
+
+const items = [
+  { name: "Keyboard", price: 50 },
+  { name: "Mouse", price: 30 },
+  { name: "Mic", price: 60 },
+  { name: "Controller", price: 80 },
+  { name: "Headset", price: 60 },
+  { name: "Monitor", price: 100 },
+  { name: "PC", price: 2000 },
+];
+
+const filteredItems = items.filter((item) => {
+  return item.price <= 85;
+  // FILTER array method
+  // type of array
+  // this array is saying all items less than or equal to
+  // $85 in price will show in filteredItems array
+});
+
+console.log(items);
+console.log(filteredItems);
+
+const itemNames = items.map((item) => {
+  return item.price;
+});
+
+console.log(itemNames);
