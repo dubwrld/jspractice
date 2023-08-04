@@ -1,6 +1,7 @@
 console.log("Hello world");
 // console.log("Hello world") logs "Hello world"
 // on the console log
+// console.log is a function
 const numbers = [1, 2, 3, 4, 5];
 // const is always making these numbers this array
 // const means the variable will have the same value
@@ -64,6 +65,9 @@ thisIsAFunction();
 
 function sum(a, b) {
   // sum is a keyword
+  // sum is used to return the sum of the
+  //  given arrays elements
+  // If the array is empty then it returns 0
   console.log(a);
   // this would log 1 on the console
   // because a = 1
@@ -85,16 +89,16 @@ function1(" aaron ", "fue ", " derrick");
 // how do i get this string to print in the console multiple times?
 // brackets?
 // print the arguement for multiple log instances, ex.
-// function1(" aaron ", "fue ", " derrick");
+// function1(" aaron ", "fue ", " derrick") is the arguement
 function1(" aaron ", "fue ", " derrick");
 
 function sum(a, b) {
   // calling the sum of the function a and b
   return a * b;
-  // return is a statement that determines a value the
-  // function will move outside of it, before ending
-  // the function execution.
-}
+  // return keyword takes whatever that value is 
+  // you're returning and puts it inside the 
+  // variable of that function
 const amount = sum(10, 10);
-
+// amount is the variable in this situation
 console.log(amount);
+}
