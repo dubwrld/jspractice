@@ -37,9 +37,13 @@ let isApproved = true;
 console.log("hello world");
 // logs string on console
 
-console.log("hello world");
+let x = 5;
+let y = 6;
+let z = x + y;
+console.log(z);
+// this logs 11 on the console because
+// x = 5, y = 6, and z = x + y
 
-console.log("hello world");
 
 // FUNCTIONS FUNCTION FUNCTIONS
 
