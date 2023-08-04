@@ -101,14 +101,14 @@ function1(" aaron ", "fue ", " derrick");
 
 function sum(a, b) {
   // calling the sum of the function a and b
-  return a * b;
+  return a + b;
   // return keyword takes whatever that value is
   // you're returning and puts it inside the
   // variable of that function
-  const amount = sum(10, 10);
   // amount is the variable in this situation
-  console.log(amount);
 }
+const amount = sum(10, 10);
+console.log(amount);
 
 // ARRAYS AND ARRAY METHODS
 
