@@ -1,6 +1,19 @@
 console.log("Hello world");
+// console.log("Hello world") logs "Hello world"
+// on the console log
 const numbers = [1, 2, 3, 4, 5];
+// const is always making these numbers this array
+// const means the variable will have the same value
+// let means the variable could have a changing value
+// [1, 2, 3, 4, 5] is an example of an array
+
 numbers.forEach((number) => {
+  //   Function parameters are the
+  // names listed in the function definition.
+  // () => {} is an arrow function
+
+  // Function arguments are the real values passed to
+  // (and received by) the function.
   console.log(number);
 });
 // alert("Hello Wrld");
@@ -9,9 +22,11 @@ let name = "dub";
 console.log(name);
 
 let firstName = "dub";
+// let firstName makes my firstName a changing variable
 const lastName = "wrld";
+// const(constant) lastName makes my lastName a non changing variable
 console.log(firstName, lastName);
-// these are called string literals
+// these are called string literals or strings
 
 let age = 30;
 // this is called a number literal
@@ -25,9 +40,10 @@ console.log("hello world");
 
 console.log("hello world");
 
-// FUNCTIONS
+// FUNCTIONS FUNCTION FUNCTIONS
 
 function thisIsAFunction() {
+  // this is calling a function
   // function() calls the function,
   // then name the function in camelCase
 
@@ -57,15 +73,28 @@ function sum(a, b) {
 }
 sum(1, 2);
 
-
 function function1(a, b, c) {
+  // this is also calling a function
   console.log(a + b + c);
   console.log(a + a + a + a + a);
-  
 }
-function1([" aaron ", "fue ", " derrick"]);
+function1(" aaron ", "fue ", " derrick");
 // this would log aaron, fue, derrick
 // because we identified a,b,c as those names
 // to be logged whenever function1 is called
 // how do i get this string to print in the console multiple times?
 // brackets?
+// print the arguement for multiple log instances, ex.
+// function1(" aaron ", "fue ", " derrick");
+function1(" aaron ", "fue ", " derrick");
+
+function sum(a, b) {
+  // calling the sum of the function a and b
+  return a * b;
+  // return is a statement that determines a value the
+  // function will move outside of it, before ending
+  // the function execution.
+}
+const amount = sum(10, 10);
+
+console.log(amount);
