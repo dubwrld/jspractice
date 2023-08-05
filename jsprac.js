@@ -1,7 +1,7 @@
 console.log("Hello world");
 // console.log("Hello world") logs "Hello world"
 // on the console log
-// console.log is a function
+// console.log is a method
 const numbers = [1, 2, 3, 4, 5];
 // const is always making these numbers this array
 // const means the variable will have the same value
@@ -29,6 +29,7 @@ let firstName = "dub";
 const lastName = "wrld";
 // const(constant) lastName makes my lastName a non changing variable
 const gamerTag = firstName + lastName;
+
 // this is declaring a statement!
 console.log(gamerTag);
 // these are called string literals or strings
@@ -138,3 +139,25 @@ const itemNames = items.map((item) => {
 });
 
 console.log(itemNames);
+
+function recursiveFunction(numb, value) {
+  let start = Date.now();
+  // recursive function repeats the application of a rule
+  if (numb <= 1) {
+    let end = Date.now();
+    console.log(`Time recursion: ${end - start}`);
+    return;
+  }
+  numb = numb / 2;
+  recursiveFunction(numb, value);
+}
+
+recursiveFunction(10000000, "Im a recursive function ");
+
+let start = Date.now();
+for (let i = 1000; i >= 0; i -= 1) {
+  if (i == 0) {
+    let end = Date.now();
+    console.log(`Time loop: ${end - start}`);
+  }
+}
